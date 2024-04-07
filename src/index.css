@@ -1,13 +1,105 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Jacquarda+Bastarda+9&family=Mooli&family=Noto+Sans+Khojki&family=Reddit+Mono:wght@200..900&family=Varela+Round&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Jacquarda+Bastarda+9&family=Mooli&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Noto+Sans+Khojki&family=Reddit+Mono:wght@200..900&family=Varela+Round&display=swap');
+
+*{
+  padding: 0;
+  box-sizing: border-box;
+font-family:"Mulish";
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navbar{
+  background-color: #fff !important;
+}
+.navbar-brand{
+  font-size: 1.3rem !important;
+  text-transform: capitalize;
+  color: #565387;
+}
+.navbar a{
+  font-size: 1.3rem;
+}
+.menu-active{
+  font-weight: bold;
+  border-bottom: 1px solid #565387;
+}
+.navbar a:hover{
+  color:#3498db;
+}
+@media(max-width:991px){
+  .navbar-brand{
+    font-size:1.5rem !important
+  }
+}
+
+#header{
+  width: 100%;
+  height: 80vh;
+  margin-top: 100px;
+}
+#header h1{
+  margin: 0 0 10px 0;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+h1 .brand-name{
+  color: #3498db;
+}
+
+ h2{
+  font-size: 20px;
+}
+.btn-get-started{
+  font-size: 16px;
+  font-weight: 7s00;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 50px;
+  text-decoration: none;
+  color: #3498db;
+  border: 2px solid #3498db;
+  transition: 0.5s;
+}
+.btn-get-started:hover{
+  color: white;
+  background-color: #3498db;
+}
+.header-img{
+  text-align: right;
+} 
+/* Home.css */
+@keyframes moveUp {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes moveDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.animated {
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.move-up-down {
+  animation-name: moveUp, moveDown;
 }
